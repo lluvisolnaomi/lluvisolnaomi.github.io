@@ -1,0 +1,39 @@
+.letra-principal {
+  color: rgb(0, 0, 0);
+  font-family: 'Bungee Shade', cursive;
+  font-size: 30px;
+  border: 0.5px;
+  text-align: center;
+}
+img {
+width: 500px;
+border-width: 5px;
+border-color: rgb(209, 252, 20);
+border-style:dotted;
+border-radius: 10%;
+margin: 5px;
+text-align: center;
+}
+.letras-parrafos { 
+  font-size: 30px;
+  font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.lista {
+text-align:left;
+padding-top: 5px;
+font-family: 'Courgette', cursive;
+font-size: 20px;
+}
+.resaltar {
+  font-family:  'Mochiy Pop One', sans-serif;
+  font-size: 32px;;
+}
+* {
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190521/pngtree-watercolor-background-vector-image_112563.jpg");
+  margin: 30px;
+}
+p {
+  font-family: 'Satisfy', cursive;
+  font-size: 18px;
+}

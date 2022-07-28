@@ -1,0 +1,21 @@
+.letra-principal {
+    font-family:'Kaushan Script', cursive;
+    font-size: 30px;
+    padding: 60px;
+    background-color:#abc3ed;
+    width: 100%;
+}
+.segunda-letra {
+    font-family: ;
+    font-size: ;
+    padding: ;
+}
+#cuestionario {
+
+}
+body {
+    background-image: url("http://d3ugyf2ht6aenh.cloudfront.net/stores/103/217/products/combo-arcoiris1-2e62d57a98383351ef16273195206777-640-0.jpg");
+} 
+* {
+    text-align: center;
+}

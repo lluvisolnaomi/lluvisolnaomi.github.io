@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root
+{
+    --white: #0a0303;
+    --green: #e4f585;
+    --green-light: #ffffff;
+    --black: #36383F;
+    --pink: #f3cff1; 
+    
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.letra-principal
+{
+font-family: 'Prata', serif;
+font-size: 25px;
+margin: 30px;
+}
+.letra-linda 
+{
+    font-family: 'Architects Daughter', cursive; 
+    margin: 40px;
+}
+.margin
+{
+    margin: 50px;
+    font-family: 'Handlee', cursive;
+}
+
+body
+{
+    font-family: "Poppins", sans-serif;
+    background-image: url("https://images.vexels.com/media/users/3/110102/raw/a4d842b7de7a577f3eacba19d5a9de05-brillante-puzzle-03-vector.jpg");
+}
+
+main
+{
+    padding: 20px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+ul
+{
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header
+{
+    background-color: var(--green);
+    box-shadow: 1px 1px 5px 0px var(--pink
+    );
+    position: sticky;
+    top: 0;
+    width: 100%;
+    font-family: 'Uchen', serif;
+    
+}
+
+.logo
+{
+    display: inline-block;
+    color: var(--white);
+    font-size: 48px;
+    margin-left: 10px;
+    font-family: 'Rampart One', cursive;
+    color: rgb(120, 24, 209);
+}
+
+.nav
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: var(--pink);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+.menu a
+{
+    display:block;
+    padding: 4px;
+    color: var(--white);
+}
+
+.menu a:hover
+{
+    background-color: var(--green-light);
+}
+
+.hamb
+{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+
+
+.hamb-line 
+{
+    background: var(--white);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+
+}
+
+.hamb-line::before,
+.hamb-line::after
+{
+    background: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.hamb-line::before
+{
+    top: 5px;
+}
+
+.hamb-line::after
+{
+    top: -5px;
+}
+
+.side-menu 
+{
+    display: none;
+}
+
+.side-menu:checked ~ nav
+{
+    max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line 
+{
+    background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before 
+{
+    transform: rotate(-45deg);
+    top:0;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after 
+{
+    transform: rotate(45deg);
+    top:0;
+}
+
+@media (min-width: 768px)
+{
+    .nav
+    {
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+
+    .menu li
+    {
+        float: left;
+    }
+
+    .menu a:hover
+    {
+        background-color: transparent;
+        color: var(--green-light)
+    }
+
+    .hamb
+    {
+        display: none;
+    }
+}

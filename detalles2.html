@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>
+        Contacta a un especialista
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Courgette&family=Edu+NSW+ACT+Foundation&family=Mochiy+Pop+One&family=Satisfy&display=swap" rel="stylesheet">
+<link href="C:\Users\L_Nao\OneDrive\Documentos\FreecodeCamp\detalles2.css" rel="stylesheet">
+</head>
+<body>
+    <h2 class="principal">
+        Completa el siguiente cuestionario para ser contactado por un especialista en neurodesarrollo.
+    </h2>
+    <h4 class="secundaria">Para comenzar ingresa tu email.</h4>
+    <form action="/enviar-respuesta">
+        <input type="email" placeholder="Ingresa tu mail." required>
+        <button type="submit">Enviar</button>
+        <hr>
+        <div class="cuestionario">
+            ¿Tiene usted algún familiar directo con TEA? <br>
+            <label for="Sí"> 
+              <input id= "Sí" type="radio" value="Sí" name="si-no" checked> Sí</label> 
+            <label for="No"> 
+              <input id="No" type="radio" value="No" name="si-no"> No</label>
+          <hr>
+            ¿Está diagnosticado o solo tienes sospecha?
+          <br> 
+            <label for="Diagnosticado "> 
+              <input id="Diagnosticado" type="radio" value="Diagnosticado" name="dia-sosp" checked> Diagnosticado</label>
+
+            <label for="Sospecha"> <input id="Sospecha" type="radio" value="Sospecha" name="dia-sosp"> Sospecha. </label> <br>
+          <hr>
+             Ha acudido a algún especialista? Seleccione cual. <br> 
+            <label for="psicologo"> 
+              <input id="psicologo" type="checkbox" value="psicologo" name="especialista" checked> Psicólogo infantil </label><br>
+
+            <label for="neurologo"> 
+              <input id="neurologo" type="checkbox" value="neurologo" name="especialista"> Neurólogo infantil</label> <br>
+
+          <label for="pediatra"> 
+            <input id="pediatra" type="checkbox" value="pediatra" name="especialista"> Pediatra </label><br>
+
+          <label for="neurodesarrollo"> 
+            <input id="neurodesarrollo" value="neurodesarrollo" type="checkbox" name="especialista"> Especialista en neurodesarrollo infantil </label> <br>
+
+            <label for="psiquiatra"> 
+              <input id="psiquiatra"  type="checkbox" value="psiquiatra" name="especialista"> Psiquiatra infantil </label><br>
+            
+            <label for=" no he acudido"> 
+              <input id="no he acudido" type="checkbox" value="no he acudido" name="especialista"> No he acudido a ningún especialista. </label><br>
+            <button type="submit">Enviar</button> <br>
+            Luego de responder todas las preguntas, oprima en el botón ENVIAR. 
+            <hr>       
+          Ingresa la edad del niño/niña en cuestión <br>
+            <input type="text" placeholder="Edad del infante" required> <button type="reset">Enviar</button>       
+            <hr>
+            Ingresa tu número telefónico, incluyendo el código de área.
+            <br>
+            <input type="number" placeholder="Número telefónico." required>
+            <button type="submit">Enviar</button>
+            <hr>
+            <h3> Haz clic <a href="file:///C:/Users/L_Nao/OneDrive/Documentos/FreecodeCamp/index.html" target="_blank" rel="noopener noreferrer"/> AQUÍ </a> para conocer un poco más sobre el TRASTORNO DEL ESPECTRO AUTISTA. </h3> 
+        <hr>
+         </form>
+        </div>
+
+
+</body>
+</html>
